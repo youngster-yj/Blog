@@ -1,5 +1,5 @@
 <h1 class='hcenter'>Youngster_yj'Blog详解</h1>
-<h3 class='hcenter'>项目使用</h3>
+<h3 class='hcenter'>项目使用(PS:不要忘记Start哦)</h3>
 
 #### 项目拉取：
     cd 项目根目录
@@ -103,8 +103,8 @@
 #### (3).可显评论所有信息(为真实不做修改功能)
 
 ---
-<h4 class='hcenter'>- -本Blog前后端将陆续开源至本人GitHub且持续优化更新,如想参考本博客源码可留言索要或催促- -</h4>
-<h6 class='hcenter'>Thanks to JSPang AntdUI</h4>
+<h4>- -本Blog前后端将陆续开源至本人GitHub且持续优化更新,如想参考本博客源码可留言索要或催促- -</h4>
+<h6>Thanks to JSPang AntdUI</h4>
 
 
 
