@@ -3,7 +3,7 @@
 
 #### 项目浏览
 `http协议访问:`
-<br/><a href='www.jsfan.net' target="_blank">www.jsfan.net</a><br/>
+<br/><a href='www.jsfan.net' target="_blank">http://www.jsfan.net</a><br/>
 
 `https协议访问:`    
 <a href='https://www.jsfan.net' target="_blank">https://www.jsfan.net</a>
