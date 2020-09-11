@@ -1,6 +1,12 @@
 <h1 class='hcenter'>Youngster_yj'Blog详解</h1>
 <h3 class='hcenter'>项目使用(PS:不要忘记Start哦)</h3>
 
+#### 项目浏览
+`http协议访问:`
+<br/><a href='jsfan.net' target="_blank">jsfan.net</a><br/>
+
+`https协议访问:`    
+<a href='jsfan.net' target="_blank">https://www.jsfan.net</a>
 #### 项目拉取：
     cd 项目根目录
     npm i //安装依赖包
