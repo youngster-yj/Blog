@@ -5,6 +5,10 @@
     cd 项目根目录
     npm i //安装依赖包
     npm start //启用
+#### 博客PC端与移动端部分页面展示
+<img src='https://www.jsfan.net/upload/myblogindex.png' width= 700px >
+<img src='https://www.jsfan.net/upload/rnblog22.jpg' height= 500px >
+
 #### src目录下前台主体详解：
     App.js //前台路由页面
     Blog.js //详情页面
