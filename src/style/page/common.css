@@ -1,0 +1,411 @@
+body{
+    background-color: #f6f6f6;  
+  }
+  
+  .comm-left{
+    background-color: #FFF;
+    padding:.3rem;
+    border-radius: .3rem;
+    border:1px solid #eee;
+  }
+  .comm-box{
+    background-color: #FFF;
+    margin-left: .5rem;
+    padding:.3rem;
+    border-radius: .3rem;
+    border:1px solid #eee;
+  
+  
+  }
+  .comm-main{
+    margin-top: .5rem;
+  }
+  
+.list-title{
+  font-size:1.3rem;
+  color: #1e90ff;
+  padding: 0 0.5rem;
+}
+.list-context{
+  color:#777;
+  padding:.5rem;
+}
+.list-icon{
+  padding:.5rem 0;
+  color:#AAA;
+}
+.list-icon span{
+  display: inline-block;
+  padding: 0 8px;
+}
+
+
+
+
+
+/* markdown样式 */
+pre{
+  display: block;
+  background-color: #283646 !important;
+   padding: .5rem !important;
+   overflow-y: auto;
+   font-weight: 300;
+   font-family: Menlo, monospace;
+   border-radius: .3rem;
+}
+
+pre >code{
+  border:0px !important;
+  background-color: #283646 !important;
+  color:#FFF;
+
+}
+code {
+  display: inline-block ;
+  background-color:#f3f3f3;
+  border:1px solid #fdb9cc;
+  border-radius:3px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color:#4f4f4f;
+  margin: 0px 3px;
+
+}
+
+.list-context img{
+ width:100% ;
+ border-radius:5px;
+ border:1px solid #f0f0f0;
+ max-width:1000px !important;
+ display: block;
+ margin:8px  auto ;
+
+}
+/* markdown样式 */
+
+.ant-back-top {
+  bottom: 100px;
+}
+.ant-back-top-inner {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,.4);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.img{
+  transition: all .8s linear;
+  margin: 0px auto !important;
+}
+.suofang:hover .img{
+  transform:scale(1.1,1.2);
+  
+}
+.suofang{
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+blockquote {
+  border-left: .4rem solid #cbcbcb;
+  padding: 10px 10px 10px 30px;
+  background-color: #f8f8f8;
+  margin: 0 0 .5rem !important;
+}
+
+/* 滚轮改变 */
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    /*滚动条整体样式*/
+  width : 6px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+   /*滚动条里面轨道*/
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : #ededed;
+  border-radius: 10px;
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+   /*滚动条里面小方块*/
+   border-radius   : 10px;
+   background-color: #283646;
+   background-image: -webkit-linear-gradient(
+       45deg,
+       rgba(255, 255, 255, 0.2) 25%,
+       transparent 25%,
+       transparent 50%,
+       rgba(255, 255, 255, 0.2) 50%,
+       rgba(255, 255, 255, 0.2) 75%,
+       transparent 75%,
+       transparent
+   );
+}
+
+/* 加入搜索条后覆盖antd样式 */
+.ant-list-header{
+  padding-top: 6px !important;
+  padding-bottom: 3px !important;
+}
+
+
+/* 过度动画 */
+.cssnice{
+  animation: cssnice 1s both;
+}
+@keyframes cssnice{
+  0%{
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+  }
+  50%{
+    opacity: 1;
+  }
+}
+/* 过度动画 */
+.cssnice1{
+  animation: cssnice1 1s both;
+}
+@keyframes cssnice1{
+  0%{
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+  }
+  50%{
+    opacity: 1;
+    transform: translate3d(3%,0,0);
+  }
+  65%{
+    opacity: 1;
+    transform: translate3d(-2.5%,0,0);
+  }
+  80%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  90%{
+    opacity: 1;
+    transform: translate3d(-1%,0,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+/* 过度动画 */
+.cssnice0{
+  animation: cssnice0 1s both;
+}
+@keyframes cssnice0{
+  0%{
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+/* 过度动画 */
+.cssnice2{
+  animation: cssnice2 1s both;
+}
+@keyframes cssnice2{
+  0%{
+    opacity: 0;
+    transform: translate3d(100%,0,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+.cssnicehover{
+  transition: all linear .5s;
+}
+.cssnicehover:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  transform: translate3d(0,-2px,0);
+  background-color: rgba(255,255,255,.5);
+}
+/* .cssnicehover:hover .img{
+  transform:scale(1.1,1.2);
+} */
+.cssnice3{ 
+  /* 分页动画 */
+  animation: cssnice3 1s both;
+}
+@keyframes cssnice3{
+  20%{
+    transform: rotate3d(0, 0, 1, 25deg);
+  }
+  40%{
+    transform: rotate3d(0, 0, 1, -20deg);
+  }
+  60%{
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  80%{
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  100%{
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.cssnice4{
+  animation: cssnice4 1s both;
+}
+@keyframes cssnice4{
+  0%{
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }
+  50%{
+    opacity: 1;
+    transform: translate3d(0,-3%,0);
+  }
+  65%{
+    opacity: 1;
+    transform: translate3d(0,2.5%,0);
+  }
+  80%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  90%{
+    opacity: 1;
+    transform: translate3d(0,1%,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+/* 过度动画 */
+.cssniceright{
+  animation: cssniceright 1.2s both;
+}
+@keyframes cssniceright{
+  0%{
+    opacity: 0;
+    transform: translate3d(100%,0,0);
+  }
+  50%{
+    opacity: 1;
+    transform: translate3d(-3%,0,0);
+  }
+  65%{
+    opacity: 1;
+    transform: translate3d(2.5%,0,0);
+  }
+  80%{
+    opacity: 1;
+    transform: translate3d(-2%,0,0);
+  }
+  90%{
+    opacity: 1;
+    transform: translate3d(-1%,0,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+.ant-comment-inner img{ 
+  /* 旋转头像 */
+  transition: all 1s;
+}
+.ant-comment-inner:hover img{
+  transform: rotate(360deg);
+  
+}
+.ant-back-top-inner:hover{
+  /* 置顶特效 */
+  animation: btn-pudding 2s linear;
+}
+@keyframes btn-pudding{
+  12%, 15% {
+    transform: scale(0.93, 1.07);
+}
+
+16%, 17% {
+    transform: scale(0.94, 1.06);
+}
+10%, 18% {
+    transform: scale(0.95, 1.05);
+}
+19% {
+    transform: scale(0.96, 1.04);
+}
+20% {
+    transform: scale(0.98, 1.02);
+}
+21%, 40%, 48% {
+    transform: scale(0.99, 1.01);
+}
+22%, 23%, 37%, 39%, 49% {
+    transform: scale(1, 1);
+}
+7%, 24%, 34%, 36% {
+    transform: scale(1.01, 0.99);
+}
+25%, 27%, 30%, 33% {
+    transform: scale(1.02, 0.98);
+}
+28%, 29% {
+    transform: scale(1.03, 0.97);
+}
+2% {
+    transform: scale(1.16, 0.84);
+}
+0% {
+    transform: scale(1.2, 0.8);
+}
+}
+
+/* 更改选中颜色 */
+p::selection {     
+  background: hotpink;
+  color: #fff; }
+h4::selection {     
+  background: hotpink;
+  color: #fff; }
+div::selection {     
+  background: hotpink;
+  color: #fff; }
+a::selection {     
+    background: hotpink;
+    color: #fff; }
+span::selection {     
+  background: hotpink;
+  color: #fff; }
+img::selection {     
+    background: hotpink;
+    color: #fff; }
+code::selection {     
+  background: hotpink;
+  color: #fff; }    
+input::selection {     
+  background: hotpink;
+  color: #fff; }
+textarea::selection {     
+    background: hotpink;
+  color: #fff; }
+
+/* 解决antd BUG */
+.ant-modal-confirm-content{
+  margin-left: 0 !important;
+}

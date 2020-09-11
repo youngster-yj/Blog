@@ -1,0 +1,43 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.26.9",
+    "echarts": "^4.7.0",
+    "echarts-for-react": "^2.0.15-beta.1",
+    "highlight.js": "^9.18.1",
+    "marked": "^0.8.0",
+    "qrcode.react": "^1.0.0",
+    "react": "^16.9.0",
+    "react-aplayer": "^1.0.0",
+    "react-countup": "^4.3.3",
+    "react-dom": "^16.9.0",
+    "react-lazyload": "^2.6.7",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.1",
+    "react-zmage": "^0.8.5-beta.31",
+    "redux": "^4.0.5"
+  },
+  "scripts": {
+    "start": "set PORT=80 &&react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

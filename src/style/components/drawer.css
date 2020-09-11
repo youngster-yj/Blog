@@ -1,0 +1,10 @@
+.ant-drawer-content{
+    background-color: rgb(40,54,70);
+}
+.myname{
+    color:rgba(255, 255, 255, .6)
+}
+.ant-tag {
+    margin-bottom: 8px;
+}
+.ant-drawer-wrapper-body::-webkit-scrollbar {display:none}

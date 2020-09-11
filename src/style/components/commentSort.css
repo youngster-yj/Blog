@@ -1,0 +1,30 @@
+.buttonContainer,.listContainer{
+    /* margin: 24px; */
+  }
+  .buttonContainer button{
+    margin:0 20px 0 0;
+  }
+  .listContainer{
+    height:530px;
+    width:100%;
+    padding: 0 24px;
+    overflow:hidden;
+  }
+  .animate{
+    transition:all .8s;
+  }
+  .opacityAnimation{
+    animation:opacityAnimation 1s 1;
+    -webkit-animation:opacityAnimation 1s 1; 
+  }
+  @keyframes opacityAnimation{
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  @-webkit-keyframes opacityAnimation {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  .hovercolor:hover{
+    color: deeppink;
+}

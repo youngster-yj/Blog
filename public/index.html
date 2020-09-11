@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/studen.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Youngster_yj的私人博客"
+    />
+    <!-- <link rel="apple-touch-icon" href="logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>私人博客</title>
+
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1823201_slkzuxy9rl.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+        window.cheng=returnCitySN
+    </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?007fda93834eea7e4181a6eca19cfb3e";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+    <script>
+        function getExplorerInfo() {
+var explorer = window.navigator.userAgent.toLowerCase();
+
+if (explorer.indexOf("msie") >= 0) {
+var ver = explorer.match(/msie ([\d.]+)/)[1];
+return { type: "IE", version: ver };
+}
+
+else if (explorer.indexOf("firefox") >= 0) {
+var ver = explorer.match(/firefox\/([\d.]+)/)[1];
+return { type: "Firefox", version: ver };
+}
+
+else if (explorer.indexOf("chrome") >= 0) {
+var ver = explorer.match(/chrome\/([\d.]+)/)[1];
+return { type: "Chrome", version: ver };
+}
+
+else if (explorer.indexOf("opera") >= 0) {
+var ver = explorer.match(/opera.([\d.]+)/)[1];
+return { type: "Opera", version: ver };
+}
+
+else if (explorer.indexOf("Safari") >= 0) {
+var ver = explorer.match(/version\/([\d.]+)/)[1];
+return { type: "Safari", version: ver };
+}
+else{
+    return {type:null}
+}
+}
+window.liulanqi=getExplorerInfo() 
+    </script>
+
+    <script>
+        var osData = [
+      { name: 'Windows 2000',           group: 'windows_server',      identifier: 'Windows NT 5.0',                     version: '5.0' },
+      { name: 'Windows XP',             group: 'windows',         identifier: 'Windows NT 5.1',                     version: '5.1' },
+      { name: 'Windows 2003',           group: 'windows_server',      identifier: 'Windows NT 5.2',                     version: '5.2' },
+      { name: 'Windows Vista',          group: 'windows',       identifier: 'Windows NT 6.0',                     version: '6.0' },
+      { name: 'Windows 7',              group: 'windows',       identifier: 'Windows NT 6.1',                     version: '7.0' },
+      { name: 'Windows 8',              group: 'windows',       identifier: 'Windows NT 6.2',                     version: '8.0' },
+      { name: 'Windows 8.1',            group: 'windows',       identifier: 'Windows NT 6.3',                     version: '8.1' },
+      { name: 'Windows 10',             group: 'windows',       identifier: 'Windows NT 10.0',                    version: '10.0' },
+      { name: 'Windows 2008',           group: 'windows_server',    identifier: 'Windows NT 6.0; WOW64',                     version: '6.0' },
+      { name: 'Windows 2008',           group: 'windows_server',    identifier: 'Windows NT 6.1; WOW64',                     version: '6.1' },
+      { name: 'Windows 2012',           group: 'windows_server',    identifier: 'Windows NT 6.3; Win64',                     version: '6.3' },
+      { name: 'Chrome OS',              group: 'windows',      identifier: 'CrOS'                               },
+      { name: 'Mac OS X Capitan',       group: 'mac',        identifier: 'Mac OS X (10([_|\.])11([0-9_\.]*))', versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Yosemite',      group: 'mac',        identifier: 'Mac OS X (10([_|\.])10([0-9_\.]*))', versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Mavericks',     group: 'mac',        identifier: 'Mac OS X (10([_|\.])9([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Mountain Lion', group: 'mac',        identifier: 'Mac OS X (10([_|\.])8([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Lion',          group: 'mac',        identifier: 'Mac OS X (10([_|\.])7([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Snow Leopard',  group: 'mac',        identifier: 'Mac OS X (10([_|\.])6([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Leopard',       group: 'mac',        identifier: 'Mac OS X (10([_|\.])5([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Tiger',         group: 'mac',        identifier: 'Mac OS X (10([_|\.])4([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Panther',       group: 'mac',        identifier: 'Mac OS X (10([_|\.])3([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Jaguar',        group: 'mac',        identifier: 'Mac OS X (10([_|\.])2([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Puma',          group: 'mac',        identifier: 'Mac OS X (10([_|\.])1([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS X Cheetah',       group: 'mac',        identifier: 'Mac OS X (10([_|\.])0([0-9_\.]*))',  versionSeparator: '[_|\.]' },
+      { name: 'Mac OS',                 group: 'mac',        identifier: 'Mac OS'                              },
+      { name: 'Ubuntu',                 group: 'linux_server',         identifier: 'Ubuntu',                             versionIdentifier: 'Ubuntu/([0-9\.]*)' },
+      { name: 'CentOs',                 group: 'linux_server',         identifier: 'CentOs',                             versionIdentifier: 'CentOs/([0-9\.]*)' },
+      { name: 'Debian',                 group: 'linux_server',         identifier: 'Debian'                             },
+      { name: 'Gentoo',                 group: 'linux_server',         identifier: 'Gentoo'                             },
+      { name: '国产手机',               group: 'linux',         identifier: 'Linux'                              }
+];
+
+var setOsData = function(os) {
+  var userAgent = navigator.userAgent.toLowerCase();
+
+  for (i in osData) {
+      if (osData.hasOwnProperty(i)){
+        var osRegExp = new RegExp(osData[i].identifier.toLowerCase());
+        var osRegExpResult = osRegExp.exec(userAgent);
+
+        if (osRegExpResult != null) {
+            os.name = osData[i].name;
+            os.group = osData[i].group;
+            break;
+        }
+      }
+  }
+
+  return true;
+};
+
+
+var setOsVersion = function(os,version, separator) {
+  if (separator.substr(0, 1) == '[') {
+      var splitVersion = version.split(new RegExp(separator, 'g'), 2);
+  } else {
+      var splitVersion = version.split(separator, 2);
+  }
+
+  if (separator != '.') {
+      version = version.replace(new RegExp(separator, 'g'), '.');
+  }
+
+  os.fullVersion = version;
+
+
+  if (splitVersion[0]) {
+      os.majorVersion = parseInt(splitVersion[0]);
+  }
+
+
+  if (splitVersion[1]) {
+      os.minorVersion = parseInt(splitVersion[1]);
+  }
+
+  return true;
+};
+var os = {};
+    setOsData(os);
+    window.device = os.name
+
+    </script>
+
+    <script>
+        let all = new Date();
+        let date = all.getDate();
+        let month = all.getMonth() + 1;
+        let year = all.getFullYear(); 
+        let hours = all.getHours(); 
+        let minutes = all.getMinutes()
+        if(minutes<10){
+            minutes = '0' + minutes
+        }
+        window.time={year:year,month:month,date:date,hours:hours,minutes:minutes}
+    </script>
+
+  </head>
+  <body>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+            <div>
+                    <style>
+                      @charset "utf-8";
+                  body {
+                    background: #161B29;
+                    margin: 0 auto;
+                    height: 100%;
+                    width: 100%;
+                  }
+                  
+                  .container {
+                    width: 40vw;
+                    height: 40vw;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                  }
+                  
+                  .common {
+                    height: 5vw;
+                    max-height: 100%;
+                    overflow: auto;
+                    width: 2vw;
+                    margin: auto;
+                    max-width: 100%;
+                    position: absolute;
+                    border-radius: 0vw 10vw 0vw 10vw;
+                    box-shadow: inset 0vw 0vw 0vw .1vw #E645D0, 0vw 0vw 1.5vw 0vw #E645D0;
+                  }
+                  
+                  .one {
+                    transform: rotate(45deg);
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 7.5vw;
+                  }
+                  
+                  .two {
+                    transform: rotate(90deg);
+                    left: 5.5vw;
+                    right: 0;
+                    top: 0;
+                    bottom: 5.5vw;
+                  }
+                  
+                  .three {
+                    transform: rotate(135deg);
+                    left: 7.5vw;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                  }
+                  
+                  .four {
+                    transform: rotate(180deg);
+                    left: 5.5vw;
+                    right: 0;
+                    top: 5.5vw;
+                    bottom: 0;
+                  }
+                  
+                  .five {
+                    transform: rotate(225deg);
+                    left: 0;
+                    right: 0;
+                    top: 7.5vw;
+                    bottom: 0;
+                  }
+                  
+                  .six {
+                    transform: rotate(270deg);
+                    left: 0;
+                    right: 5.5vw;
+                    top: 5.5vw;
+                    bottom: 0;
+                  }
+                  
+                  .seven {
+                    transform: rotate(315deg);
+                    left: 0;
+                    right: 7.5vw;
+                    top: 0;
+                    bottom: 0;
+                  }
+                  
+                  .eight {
+                    transform: rotate(360deg);
+                    left: 0;
+                    right: 5.5vw;
+                    top: 0;
+                    bottom: 5.5vw;
+                  }
+                  
+                  .one {
+                    animation: one 1s ease infinite;
+                    -moz-animation: one 1s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: one 1s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: one 1s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes one {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .two {
+                    animation: two 1s .125s ease infinite;
+                    -moz-animation: two 1s .125s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: two 1s .125s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: two 1s .125s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes two {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .three {
+                    animation: three 1s .25s ease infinite;
+                    -moz-animation: three 1s .25s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: three 1s .25s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: three 1s .25s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes three {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .four {
+                    animation: four 1s .375s ease infinite;
+                    -moz-animation: four 1s .375s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: four 1s .375s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: four 1s .375s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes four {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .five {
+                    animation: five 1s .5s ease infinite;
+                    -moz-animation: five 1s .5s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: five 1s .5s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: five 1s .5s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes five {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .six {
+                    animation: six 1s .625s ease infinite;
+                    -moz-animation: six 1s .625s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: six 1s .625s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: six 1s .625s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes six {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .seven {
+                    animation: seven 1s .750s ease infinite;
+                    -moz-animation: seven 1s .750s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: seven 1s .750s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: seven 1s .750s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes seven {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .eight {
+                    animation: eight 1s .875s ease infinite;
+                    -moz-animation: eight 1s .875s ease infinite;
+                    /* Firefox */
+                    -webkit-animation: eight 1s .875s ease infinite;
+                    /* Safari and Chrome */
+                    -o-animation: eight 1s .875s ease infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes eight {
+                    0%,
+                    100% {}
+                    50% {
+                      box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+                    }
+                  }
+                  
+                  .container {
+                    animation: container 5s linear infinite;
+                    -moz-animation: container 5s linear infinite;
+                    /* Firefox */
+                    -webkit-animation: container 5s linear infinite;
+                    /* Safari and Chrome */
+                    -o-animation: container 5s linear infinite;
+                    /* Opera */
+                  }
+                  
+                  @keyframes container {
+                    from {
+                      transform: rotate(0deg);
+                    }
+                    to {
+                      transform: rotate(-360deg);
+                    }
+                  }
+                  
+                  
+                  .fade-in {
+                    animation: fade-in 2s ease;
+                    -moz-animation: fade-in 2s ease;
+                    /* Firefox */
+                    -webkit-animation: fade-in 2s ease;
+                    /* Safari and Chrome */
+                    -o-animation: fade-in 2s ease;
+                    /* Opera */
+                  }
+                  
+                  @keyframes fade-in {
+                    from {
+                      opacity: 0;
+                    }
+                    to {
+                      opacity: 1;
+                    }
+                  }
+                  
+                  .out {
+                    animation: out 2s 15s ease;
+                    -moz-animation: out 2s 15s ease;
+                    /* Firefox */
+                    -webkit-animation: out 2s 15s ease;
+                    /* Safari and Chrome */
+                    -o-animation: out 2s 15s ease;
+                    /* Opera */
+                  }
+                  
+                  @keyframes out {
+                    from {
+                      opacity: 1;
+                    }
+                    to {
+                      opacity: 0;
+                    }
+                  }
+                    </style>
+                  <div class="out">
+                    <div class="fade-in">
+                      <div class="container">
+                        <div class="one common"></div>
+                        <div class="two common"></div>
+                        <div class="three common"></div>
+                        <div class="four common"></div>
+                        <div class="five common"></div>
+                        <div class="six common"></div>
+                        <div class="seven common"></div>
+                        <div class="eight common"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+ 
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-cross"></span> 
+        </div>
+    </div>
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
+ 
+    <script type="text/javascript">
+      (function webpackUniversalModuleDefinition(b,a){if(typeof exports==="object"&&typeof module==="object"){module.exports=a()}else{if(typeof define==="function"&&define.amd){define([],a)}else{if(typeof exports==="object"){exports.POWERMODE=a()}else{b.POWERMODE=a()}}}})(this,function(){return(function(c){var b={};function a(e){if(b[e]){return b[e].exports}var d=b[e]={exports:{},id:e,loaded:false};c[e].call(d.exports,d,d.exports,a);d.loaded=true;return d.exports}a.m=c;a.c=b;a.p="";return a(0)})([function(j,e,a){var b=document.createElement("canvas");b.width=window.innerWidth;b.height=window.innerHeight;b.style.cssText="position:fixed;top:0;left:0;pointer-events:none;z-index:999999";window.addEventListener("resize",function(){b.width=window.innerWidth;b.height=window.innerHeight});document.body.appendChild(b);var c=b.getContext("2d");var l=[];var k=0;m.shake=true;function h(o,n){return Math.random()*(n-o)+o}function g(n){if(m.colorful){var o=h(0,360);return"hsla("+h(o-10,o+10)+", 100%, "+h(50,80)+"%, "+1+")"}else{return window.getComputedStyle(n).color}}function f(){var o=document.activeElement;var n;if(o.tagName==="TEXTAREA"||(o.tagName==="INPUT"&&o.getAttribute("type")==="text")){var p=a(1)(o,o.selectionStart);n=o.getBoundingClientRect();return{x:p.left+n.left,y:p.top+n.top,color:g(o)}}var r=window.getSelection();if(r.rangeCount){var q=r.getRangeAt(0);var s=q.startContainer;if(s.nodeType===document.TEXT_NODE){s=s.parentNode}n=q.getBoundingClientRect();return{x:n.left,y:n.top,color:g(s)}}return{x:0,y:0,color:"transparent"}}function d(o,p,n){return{x:o,y:p,alpha:1,color:n,velocity:{x:-1+Math.random()*2,y:-3.5+Math.random()*2}}}function m(){var n=f();var p=5+Math.round(Math.random()*10);while(p--){l[k]=d(n.x,n.y,n.color);k=(k+1)%500}if(m.shake){var o=1+2*Math.random();var q=o*(Math.random()>0.5?-1:1);var r=o*(Math.random()>0.5?-1:1);document.body.style.marginLeft=q+"px";document.body.style.marginTop=r+"px";setTimeout(function(){document.body.style.marginLeft="";document.body.style.marginTop=""},75)}}m.colorful=false;function i(){requestAnimationFrame(i);c.clearRect(0,0,b.width,b.height);for(var n=0;n<l.length;++n){var o=l[n];if(o.alpha<=0.1){continue}o.velocity.y+=0.075;o.x+=o.velocity.x;o.y+=o.velocity.y;o.alpha*=0.96;c.globalAlpha=o.alpha;c.fillStyle=o.color;c.fillRect(Math.round(o.x-1.5),Math.round(o.y-1.5),3,3)}}requestAnimationFrame(i);j.exports=m},function(b,a){(function(){var e=["direction","boxSizing","width","height","overflowX","overflowY","borderTopWidth","borderRightWidth","borderBottomWidth","borderLeftWidth","borderStyle","paddingTop","paddingRight","paddingBottom","paddingLeft","fontStyle","fontVariant","fontWeight","fontStretch","fontSize","fontSizeAdjust","lineHeight","fontFamily","textAlign","textTransform","textIndent","textDecoration","letterSpacing","wordSpacing","tabSize","MozTabSize"];var d=window.mozInnerScreenX!=null;function c(k,m,l){var h=l&&l.debug||false;if(h){var j=document.querySelector("#input-textarea-caret-position-mirror-div");if(j){j.parentNode.removeChild(j)}}var i=document.createElement("div");i.id="input-textarea-caret-position-mirror-div";document.body.appendChild(i);var o=i.style;var f=window.getComputedStyle?getComputedStyle(k):k.currentStyle;o.whiteSpace="pre-wrap";if(k.nodeName!=="INPUT"){o.wordWrap="break-word"}o.position="absolute";if(!h){o.visibility="hidden"}e.forEach(function(p){o[p]=f[p]});if(d){if(k.scrollHeight>parseInt(f.height)){o.overflowY="scroll"}}else{o.overflow="hidden"}i.textContent=k.value.substring(0,m);if(k.nodeName==="INPUT"){i.textContent=i.textContent.replace(/\s/g,"\u00a0")}var n=document.createElement("span");n.textContent=k.value.substring(m)||".";i.appendChild(n);var g={top:n.offsetTop+parseInt(f.borderTopWidth),left:n.offsetLeft+parseInt(f.borderLeftWidth)};if(h){n.style.backgroundColor="#aaa"}else{document.body.removeChild(i)}return g}if(typeof b!="undefined"&&typeof b.exports!="undefined"){b.exports=c}else{window.getCaretCoordinates=c}}())}])});
+      </script>
+      <canvas width="914" height="754" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas>
+      <script>
+          POWERMODE.colorful = true; // make power mode colorful
+          POWERMODE.shake = false; // turn off shake
+          document.body.addEventListener('input', POWERMODE);
+     </script>
+
+    <script>
+
+      (function (window, document, undefined) {
+          var hearts = [];
+
+          window.requestAnimationFrame = (function () {
+              return window.requestAnimationFrame ||
+                  window.webkitRequestAnimationFrame ||
+                  window.mozRequestAnimationFrame ||
+                  window.oRequestAnimationFrame ||
+                  window.msRequestAnimationFrame ||
+                  function (callback) {
+                      setTimeout(callback, 1000 / 60);
+                  }
+          })();
+
+          init();
+
+          function init() {
+              css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);z-index: 5000;"+
+                  "-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before"+
+                  "{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;"+
+                  "-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+              attachEvent();
+              gameloop();
+          }
+
+          function gameloop() {
+              for (var i = 0; i < hearts.length; i++) {
+                  if (hearts[i].alpha <= 0) {
+                      document.body.removeChild(hearts[i].el);
+                      hearts.splice(i, 1);
+                      continue;
+                  }
+
+                  hearts[i].y--;
+                  hearts[i].scale += 0.004;
+                  hearts[i].alpha -= 0.013;
+                  hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
+              }
+
+              requestAnimationFrame(gameloop);
+          }
+
+          function attachEvent() {
+              var old = typeof window.onclick === "function" && window.onclick;
+              window.onclick = function (event) {
+                  old && old();
+                  createHeart(event);
+              }
+          }
+
+          function createHeart(event) {
+              var d = document.createElement("div");
+              d.className = "heart";
+              hearts.push({
+                  el: d,
+                  x: event.clientX - 5,
+                  y: event.clientY - 5,
+                  scale: 1,
+                  alpha: 1,
+                  color: randomColor()
+              });
+
+              document.body.appendChild(d);
+          }
+
+          function css(css) {
+              var style = document.createElement("style");
+              style.type = "text/css";
+              try {
+                  style.appendChild(document.createTextNode(css));
+              }
+              catch (ex) {
+                  style.styleSheet.cssText = css;
+              }
+
+              document.getElementsByTagName('head')[0].appendChild(style);
+          }
+
+          function randomColor() {
+              return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
+          }
+
+      })(window, document);
+</script>
+
+<script>
+
+    !function(){
+    
+    function n(n,e,t){
+    
+    return n.getAttribute(e)||t
+    
+    }
+    
+    function e(n){
+    
+    return document.getElementsByTagName(n)
+    
+    }
+    
+    function t(){
+    
+    var t=e("script"),o=t.length,i=t[o-1];
+    
+    return{
+    
+    l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)
+    
+    }
+    
+    }
+    
+    function o(){
+    
+    a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
+    
+    c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
+    
+    }
+    
+    function i(){
+    
+    r.clearRect(0,0,a,c);
+    
+    var n,e,t,o,m,l;
+    
+    s.forEach(function(i,x){
+    
+    for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
+    
+    null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
+    
+    l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
+    
+    t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t*1.5,r.strokeStyle="violet",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
+    
+    }),
+    
+    x(i)
+    
+    }
+    
+    var a,c,u,m=document.createElement("canvas"),
+    
+    d=t(),l="c_n"+d.l,r=m.getContext("2d"),
+    
+    x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
+    
+    function(n){
+    
+    window.setTimeout(n,1e3/45)
+    
+    },
+    
+    w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.οnresize=o,
+    
+    window.onmousemove=function(n){
+    
+    n=n||window.event,y.x=n.clientX,y.y=n.clientY
+    
+    },
+    
+    window.onmouseout=function(){
+    
+    y.x=null,y.y=null
+    
+    };
+    
+    for(var s=[],f=0;d.n>f;f++){
+    
+    var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})
+    
+    }
+    
+    u=s.concat([y]),
+    
+    setTimeout(function(){i()},100)
+    
+    }();
+    
+    </script>
+     <script>
+            ! function() {
+      function attr(node, attr, default_value) {
+        return Number(node.getAttribute(attr)) || default_value;
+      }
+    
+      // get user config
+      var scripts = document.getElementsByTagName('script'),
+        script = scripts[scripts.length - 1]; // 当前加载的script
+      config = {
+        z: attr(script, "zIndex", -1), // z-index
+        a: attr(script, "alpha", 0.6), // alpha
+        s: attr(script, "size", 300), // size
+      };
+    
+      var canvas = document.createElement('canvas'),
+        g2d = canvas.getContext('2d'),
+        pr = window.devicePixelRatio || 1,
+        width = window.innerWidth,
+        height = window.innerHeight,
+        f = config.s,
+        q, t,
+        m = Math,
+        r = 0,
+        pi = m.PI*2,
+        cos = m.cos,
+        random = m.random;
+      canvas.width = width * pr;
+      canvas.height = height * pr;
+      g2d.scale(pr, pr);
+      g2d.globalAlpha = config.a;
+      canvas.style.cssText = 'opacity: ' + config.a + ';position:fixed;top:0;left:0;z-index: ' + config.z + ';width:100%;height:100%;pointer-events:none;';
+      // create canvas
+      document.getElementsByTagName('body')[0].appendChild(canvas);
+    
+      function redraw() {
+        g2d.clearRect(0, 0, width, height);
+        q = [{x: 0, y: height * 0.7 + f}, {x: 0, y: height * 0.7 - f}];
+        while(q[1].x < width + f) draw(q[0], q[1]);
+      }
+      function draw(i, j) {
+        g2d.beginPath();
+        g2d.moveTo(i.x, i.y);
+        g2d.lineTo(j.x, j.y);
+        var k = j.x + (random()*2-0.25)*f, n = line(j.y);
+        g2d.lineTo(k, n);
+        g2d.closePath();
+        r -= pi / -50;
+        g2d.fillStyle = '#'+(cos(r)*127+128<<16 | cos(r+pi/3)*127+128<<8 | cos(r+pi/3*2)*127+128).toString(16);
+        g2d.fill();
+        q[0] = q[1];
+        q[1] = {x: k, y: n};
+      }
+      function line(p){
+        t = p + (random() * 2 - 1.1) * f;
+        return (t > height || t < 0) ? line(p) : t;
+      }
+    
+      document.onclick = redraw;
+      document.ontouchstart = redraw;
+      redraw();
+    }();
+        </script>
+  </body>
+</html>

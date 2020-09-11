@@ -1,0 +1,74 @@
+.img-about{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 500;
+    align-self: center;
+    font-family: Microsoft JhengHei, PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, Sans-Serif;
+}
+.img-one{
+    width:100%;max-height:400px;overflow:hidden;
+}
+@media screen and (max-width: 767px) {
+   .hover-img::after{
+    background: #fff !important;
+    content: '';
+    width: 150%;
+    height: 4.375rem;
+    left: -25%;
+    bottom: -2.875rem;
+    border-radius: 100%;
+    position: absolute;
+   }
+   .debug{
+    margin-top: -2.2rem;
+   }
+   .img-one{
+    width:100%;max-height:300px;overflow:hidden;
+   }
+}
+.hover-img{
+    overflow: hidden;
+    display: flex;
+}
+.hover-img img{
+    transition: all .8s linear;
+}
+.hover-img:hover img{
+    transform:scale(1.1,1.1);
+}
+.debug h1{
+    color: #737373;
+    border-radius: 5px;
+    position: relative;
+    padding: 8px 35px;
+    text-align: center;
+    border-bottom: 1px dashed #ddd;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    font-size: 2em;
+    margin: 0.67em .3em;
+}
+.debug h1:before{
+    content: "「";
+    margin-right: 5px;
+    color: #FF6D6D;
+}
+.debug h1:after{
+    content: "」";
+    margin-left: 5px;
+    color: #FF6D6D;
+}
+.debug p{
+    margin: 0;
+    color: #797979;
+    padding: 18px 0;
+    font-weight: 400;
+    font-size: 1.23rem;
+    text-indent: 2em;
+    letter-spacing: 0.1em;
+    line-height: 2.2rem;
+    margin: 0 .3em;
+}

@@ -1,0 +1,80 @@
+.header{
+    background-color: rgb(40,54,70);
+    padding: .4rem;
+    /* 根节点（html）的font-size决定了rem的尺寸，也就是说它是一个相对单位，相对于(html)。 */
+    overflow: hidden;
+    height: 3.2rem;
+    border-bottom: 1px solid #ccc;
+
+    transition: all ease-out .3s;
+
+    /* 解决ant固钉报错 */
+    z-index: 10 !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.header-logo{
+    display: inline-block;
+    cursor: pointer;
+    color:#fff;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2.5rem;
+        
+    background: -webkit-linear-gradient(left,
+    #ffffff,
+    #ff0000 6.25%,
+    #ff7d00 12.5%,
+    #ffff00 18.75%,
+    #00ff00 25%,
+    #00ffff 31.25%,
+    #0000ff 37.5%,
+    #ff00ff 43.75%,
+    #ffff00 50%,
+    #ff0000 56.25%,
+    #ff7d00 62.5%,
+    #ffff00 68.75%,
+    #00ff00 75%,
+    #00ffff 81.25%,
+    #0000ff 87.5%,
+    #ff00ff 93.75%,
+    #ffff00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 200% 100%;
+animation: masked-animation 2s infinite linear;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100%, 0;
+    }
+}
+.header-txt{
+    font-size: .6rem;
+    color: #999;
+    padding-left: .3rem;
+    display: inline-block;
+}
+.ant-menu{ 
+    /* 改变antd自带大小 */
+    line-height: 2.8rem;
+}
+.ant-menu-item{
+    /* 改变antd自带大小 */
+    font-size: .8rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.smallheader-menu{
+    line-height: 2.8rem;
+    font-size: 1rem;
+    display:block;
+    text-align: center;
+    color: #fff;
+}
+

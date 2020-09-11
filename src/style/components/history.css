@@ -1,0 +1,11 @@
+ .TimelineSpan{
+      cursor: pointer;
+      font-weight: 700;
+      border-bottom: 1px dashed #ccc;
+  }
+  .TimelineSpan:hover{
+    border-bottom: 1px dashed rgb(0, 0, 0);
+  }
+  .ant-timeline-item-head-blue{
+      background-color: rgba(255, 255, 255, 0);
+  }

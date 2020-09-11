@@ -1,0 +1,18 @@
+.allproject-span{
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 0 6px #000;
+    font-weight: bold;
+    opacity: 0.4;
+    transition: opacity 0.5s ease-in;
+}
+.allproject-img{
+    transition: transform 0.5s ease-in;
+}
+.allproject-hover:hover .allproject-img{
+    filter: grayscale(0) !important;
+    transform: scale(1.1);
+}
+.allproject-hover:hover .allproject-span{
+    opacity: 1;
+}

@@ -1,0 +1,21 @@
+.friendsLink{
+    text-align: center;
+    color: #888;
+    margin-top: .5rem;
+    margin-bottom: .4rem !important;
+}
+
+
+.friendlinkhover:hover{
+
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px #f4a7b9;
+    box-shadow: 0 0 10px#fc5eff;
+}
+.friendlinkhover:hover img{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}

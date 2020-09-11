@@ -1,0 +1,71 @@
+.author-div{
+    text-align: center;
+    padding: 1rem;
+}
+/* .author-div div{
+    margin-bottom: 1rem;
+
+} */
+.author-introduction{
+    font-size:.8rem;
+    color: #999;
+}
+.account{
+    background-color: #999;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.myname{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    /* color: blue; */
+}
+.myname1{
+    margin-bottom: .5rem;
+}
+.tencent{
+   position: absolute;
+   background-color: #fff;
+   top: -10px;
+   left: 26%;
+
+}
+.wechat{
+    position: absolute;
+    background-color: #fff;
+    top: -10px;
+    left: 26%;
+ }
+.position{
+    position: relative;
+}
+.mylight{
+    animation: light 2s linear both infinite;
+    transition: all .5s;
+}
+/* .mylight:hover{
+   
+    transform: rotate(360deg) scale(1.1);
+    transition: all 0.5s;
+} */
+@keyframes light {
+    from {
+        box-shadow: 0 0 1px white,
+            0 0 5px white,
+            0 0 10px white,
+            0 0 20px purple,
+            0 0 5px purple,
+            0 0 11px pink;
+    }
+
+    to {
+        box-shadow: 0 0 5px white,
+            0 0 10px yellow,
+            0 0 15px yellow,
+            0 0 8px green,
+            0 0 10px green,
+            0 0 12px blue;
+    }
+}

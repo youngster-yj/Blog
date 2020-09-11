@@ -1,0 +1,42 @@
+img {
+    vertical-align: top;
+
+}
+
+#main {
+    position: relative;
+}
+.divimg{
+    transition: all .8s linear;
+    margin: 0px auto !important;
+  }
+.suofanga:hover .divimg{
+    transform:scale(1.05,1.05);
+    
+  }
+
+@media screen and (max-width: 411px) {
+    .box img {
+        width: 280px;
+    }     
+    .box {
+    float: left;
+    padding: 15px 0 0 0;
+}
+}
+@media screen and (min-width:410px){
+   .box img {
+    width: 230px;
+}
+.box {
+    float: left;
+    padding: 15px 7px 0 7px;
+}
+}
+
+
+.pic {
+    padding: 10px;
+    border: 1px solid #cccc;
+    border-radius: 5px;
+}

@@ -1,0 +1,88 @@
+.bacimg{
+    background-size: cover;
+    position: relative;
+}
+.bacimg-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 40%;
+    font-size: 1.8rem;
+    transition: all linear .2s;
+}
+.bacimg-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 60%;
+    font-size: 1rem;
+    transition: all linear .2s;
+    opacity: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.label{
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #fff;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #51aded;
+    margin-right: 5px;
+    position: relative;
+    top: -.4rem;
+}
+.label:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    content: "";
+    top: 8px;
+    right: -3px;
+    border-left: 4px solid #51aded;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.borderbac{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+}
+.bacophover{
+    height: 100%;
+    transition: all linear .2s;
+}
+.bacophover:hover{
+    background-color: rgba(0,0,0,.6);
+}
+.bacophover:hover .bacimg-title{
+    top: 18%;
+}
+.bacophover:hover .bacimg-content{
+    opacity: 1;
+    top: 25%;
+}
+.botinfo{
+    height: 2rem;
+    padding: .1rem 20px;
+    overflow: hidden;
+    line-height: 1.8rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #fff;
+    font-size: .8rem;
+}
+.ant-list-split .ant-list-item {
+    border-bottom: none;
+}
+.ant-list-split .ant-list-header {
+    border-bottom: none;
+}

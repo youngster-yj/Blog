@@ -1,0 +1,35 @@
+#comments_edit{
+    resize: vertical;
+    overflow: auto;
+    font-family: "Microsoft JhengHei", miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, Sans-Serif;
+    font-size: 16.8px;
+    width: 100%;
+    height: auto;
+    min-height: 140px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: url('http://www.jsfan.net:3002/emoji/comment.png') right bottom no-repeat;
+}
+#comments_edit:empty:before{
+    content: attr(placeholder);   /* element attribute*/
+    color:#fc5eff;
+}
+#comments_edit:focus:before{
+    content:none;
+}
+#comments_edit:hover{
+    border: 1px solid #fc5eff;
+}
+#comments_edit:focus{
+    border: 1px solid#fc5eff;
+    box-shadow: 0 0 10px 0#fc5eff;
+    outline:none;
+}
+
+
+
+
+
+
