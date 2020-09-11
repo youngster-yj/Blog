@@ -3,10 +3,10 @@
 
 #### 项目浏览
 `http协议访问:`
-<br/><a href='jsfan.net' target="_blank">jsfan.net</a><br/>
+<br/><a href='www.jsfan.net' target="_blank">www.jsfan.net</a><br/>
 
 `https协议访问:`    
-<a href='jsfan.net' target="_blank">https://www.jsfan.net</a>
+<a href='https://www.jsfan.net' target="_blank">https://www.jsfan.net</a>
 #### 项目拉取：
     cd 项目根目录
     npm i //安装依赖包
