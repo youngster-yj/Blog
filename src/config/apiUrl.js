@@ -1,8 +1,6 @@
-let ipUrl = 'http://localhost:3000/'
-const ipUrlCookie = 'http://localhost:3003/'
-//http://localhost:3000/
-//https://www.jsfan.net/
-//https://www.jsfan.net:2998/
+let ipUrl = 'https://www.jsfan.net/'
+const ipUrlCookie = 'https://www.jsfan.net:2998/'
+
 let servicePath = {
     //前台
     getArticleList : ipUrl+'getArticleList',//首页接口(已用)
